@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egyéni Terápia - Dr. Sarah Mitchell</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Dr. Sarah Mitchell</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Főoldal</a>
+                    <a class="navbar-item" href="rolam.html">Rólam</a>
+                    <a class="navbar-item" href="index.html#kapcsolat">Kapcsolat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Egyéni Terápia</h1>
+                <p class="subtitle">Személyre szabott támogatás az Ön egyedi igényeihez</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <h2 class="title is-4">Mi az egyéni terápia?</h2>
+                        <p>Az egyéni terápia egy biztonságos, bizalmas környezet, ahol egy-az-egyben dolgozhatunk együtt személyes céljain és kihívásain. Minden ülés az Ön egyedi helyzetére és igényeire összpontosít.</p>
+
+                        <div class="box mt-5">
+                            <h3 class="title is-5">Mikor érdemes egyéni terápiát kezdeni?</h3>
+                            <ul>
+                                <li>Amikor úgy érzi, hogy elakadt az életében</li>
+                                <li>Nehezen kezelhető érzések vagy gondolatok esetén</li>
+                                <li>Életmódbeli változtatások támogatására</li>
+                                <li>Önismeret mélyítése és személyes fejlődés</li>
+                                <li>Múltbeli traumák feldolgozása</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="title is-5">Hogyan zajlik a terápia?</h3>
+                        <p>Az első alkalommal közösen feltérképezzük a helyzetét, céljait és elvárásait. Ezt követően személyre szabott terápiás tervet állítunk össze. Az ülések általában hetente egyszer, 50 percben zajlanak.</p>
+
+                        <div class="notification is-info is-light mt-5">
+                            <p class="has-text-weight-semibold">Az első konzultáció ingyenes!</p>
+                            <p>Egy 20 perces bemutatkozó beszélgetés keretében megbeszélhetjük, hogyan tudok segíteni Önnek.</p>
+                        </div>
+
+                        <div class="has-text-centered mt-6">
+                            <a href="index.html#kapcsolat" class="button is-primary is-medium">Időpontot kérek</a>
+                            <a href="index.html" class="button is-light is-medium ml-3">Vissza a főoldalra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 Dr. Sarah Mitchell. Engedéllyel rendelkező klinikai pszichológus.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szorongás és Depresszió Kezelése - Dolor Róza</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Dolor Róza</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Főoldal</a>
+                    <a class="navbar-item" href="rolam.html">Rólam</a>
+                    <a class="navbar-item" href="index.html#kapcsolat">Kapcsolat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Szorongás és Depresszió Kezelése</h1>
+                <p class="subtitle">Szakértői segítség a mentális jóllét visszanyeréséhez</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <h2 class="title is-4">Segítség szorongás és depresszió esetén</h2>
+                        <p>A szorongás és a depresszió a leggyakoribb mentális egészségügyi problémák közé tartoznak, amelyek jelentősen befolyásolhatják életminőségünket. A jó hír, hogy mindkettő eredményesen kezelhető megfelelő terápiával.</p>
+
+                        <div class="columns is-multiline mt-5">
+                            <div class="column is-6">
+                                <div class="box">
+                                    <h3 class="title is-5">Szorongás</h3>
+                                    <p><strong>Gyakori tünetek:</strong></p>
+                                    <ul>
+                                        <li>Tartós aggodalom</li>
+                                        <li>Pánikrohamok</li>
+                                        <li>Fizikai tünetek (szívdobogás, izzadás)</li>
+                                        <li>Alvászavarok</li>
+                                        <li>Koncentrációs nehézségek</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column is-6">
+                                <div class="box">
+                                    <h3 class="title is-5">Depresszió</h3>
+                                    <p><strong>Gyakori tünetek:</strong></p>
+                                    <ul>
+                                        <li>Tartós lehangoltság</li>
+                                        <li>Érdeklődés elvesztése</li>
+                                        <li>Energiahiány, fáradtság</li>
+                                        <li>Étvágyváltozás</li>
+                                        <li>Önértékelési problémák</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="title is-5">Terápiás megközelítés</h3>
+                        <p>A kezelés során bizonyítékokon alapuló módszereket alkalmazok, különösen a kognitív viselkedésterápiát (CBT), amely hatékonyságát számos kutatás igazolta. A terápia célja:</p>
+                        <ul>
+                            <li>A tünetek enyhítése és kezelése</li>
+                            <li>Negatív gondolkodási minták felismerése és megváltoztatása</li>
+                            <li>Praktikus megküzdési stratégiák elsajátítása</li>
+                            <li>A mindennapi működés javítása</li>
+                        </ul>
+
+                        <div class="notification is-warning is-light mt-5">
+                            <p class="has-text-weight-semibold">Fontos tudni:</p>
+                            <p>Ha öngyilkossági gondolatai vannak, vagy sürgős segítségre van szüksége, kérem hívja a Lelki Elsősegély telefonszámát: 116-123 (24 órás szolgáltatás)</p>
+                        </div>
+
+                        <div class="has-text-centered mt-6">
+                            <a href="index.html#kapcsolat" class="button is-primary is-medium">Időpontot kérek</a>
+                            <a href="index.html" class="button is-light is-medium ml-3">Vissza a főoldalra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 Dolor Róza. Engedéllyel rendelkező klinikai pszichológus.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
