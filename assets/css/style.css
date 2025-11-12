@@ -71,6 +71,75 @@ html {
     border-top: 1px solid #e0e0e0;
 }
 
+/* Process section styles */
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #3273dc;
+    margin-bottom: 0.5rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    counter-reset: step-counter;
+}
+
+.step {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    gap: 1rem;
+    counter-increment: step-counter;
+    position: relative;
+}
+
+.step:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.step::before {
+    content: counter(step-counter);
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #3273dc;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step h4 {
+    color: #363636;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+}
+
+.step p {
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-image .title {
@@ -79,5 +148,14 @@ html {
 
     .hero-image .subtitle {
         font-size: 1.25rem;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step::before {
+        margin-bottom: 0.5rem;
     }
 }
