@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatvédelmi tájékoztató - Mészáros Ibolya</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <strong>Mészáros Ibolya</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index.html">Főoldal</a>
+                    <a class="navbar-item" href="index.html#folyamat">Folyamat</a>
+                    <a class="navbar-item" href="rolam.html">Rólam</a>
+                    <a class="navbar-item" href="arak.html">Árak</a>
+                    <a class="navbar-item" href="adatvedelem.html">Adatvédelem</a>
+                    <a class="navbar-item" href="index.html#kapcsolat">Kapcsolat</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <h1 class="title is-2 has-text-centered mb-6">Adatvédelmi tájékoztató</h1>
+                    <div class="box">
+                        <div class="content">
+                            <p>Az adatkezelés alapvető célja a pszichológiai szolgáltatás nyújtása, a klienssel történő kapcsolattartás, valamint a jogszabályi kötelezettségek teljesítése.</p>
+
+                            <h3 class="title is-5">Adatkezelő</h3>
+                            <p>Mészáros Ibolya e.v.<br>
+                            Székhely: 9700 Szombathely, Dolgozók útja 1/A.<br>
+                            Telefon: +36 30 081 4004</p>
+
+                            <h3 class="title is-5">Kezelt személyes adatok köre</h3>
+                            <ul>
+                                <li>Kapcsolattartási adatok (név, telefonszám, e-mail cím)</li>
+                                <li>A terápiás folyamathoz kapcsolódó információk</li>
+                                <li>Számlázási adatok (név, cím)</li>
+                            </ul>
+
+                            <h3 class="title is-5">Az adatkezelés jogalapja</h3>
+                            <p>Az érintett hozzájárulása, illetve a szerződés teljesítéséhez szükséges adatkezelés.</p>
+
+                            <h3 class="title is-5">Az adatkezelés időtartama</h3>
+                            <p>A terápiás folyamat befejezését követően 5 év, vagy a jogszabályi kötelezettség teljesítéséig.</p>
+
+                            <h3 class="title is-5">Az érintett jogai</h3>
+                            <ul>
+                                <li>Tájékoztatás kérése az adatkezelésről</li>
+                                <li>Adatok helyesbítésének kérése</li>
+                                <li>Adatok törlésének kérése</li>
+                                <li>Adatkezelés korlátozásának kérése</li>
+                                <li>Adathordozhatósághoz való jog</li>
+                                <li>Tiltakozás az adatkezelés ellen</li>
+                            </ul>
+
+                            <p>Az érintett jogainak érvényesítése érdekében a fenti elérhetőségeken keresztül léphet kapcsolatba az adatkezelővel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2026 Mészáros Ibolya. Felnőtt klinikai és mentálhigiéniai szakpszichológus.</p>
+            <p class="mt-2">
+                <a href="index.html#kapcsolat">Kapcsolat</a> |
+                <a href="arak.html">Árak</a> |
+                <a href="adatvedelem.html">Adatvédelmi tájékoztató</a> |
+                <a href="index.html#impresszum">Impresszum</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
