@@ -6,7 +6,7 @@ body {
 
 /* Hero section with background image */
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/hero2.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
